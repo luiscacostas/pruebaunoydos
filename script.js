@@ -1,7 +1,7 @@
 //Diseña un algoritmo que cuente las veces que aparece una determinada letra en una frase
 
 let frase = 'Aprendiendo a programar en Javascript';
-let letra = prompt('Por Favor, elige una letra');
+let letra = prompt('Por Favor, elige una letra').toLowerCase();
 let count = 0;
 
 for( let i = 0; i < frase.length; i++){
@@ -9,7 +9,7 @@ for( let i = 0; i < frase.length; i++){
         count ++;
     }
 }
-console.log(count);
+console.log(`El numero de veces que se repite la letra ${letra} es ${count} veces`);
 
 //Diseña un algoritmo que imprima los números impares entre un número dado por el usuario y los siguientes 50 números
 
